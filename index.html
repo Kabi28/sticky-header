@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="side-menu" class="side-menu">
+        <button onclick="closeMenu()">close</button>
+        <ul>
+            <li>home</li>
+            <li>services</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <a href="">Home</a>
+                <a href="">service</a>
+                <a href="">about</a>
+                <a href="">contact</a>
+                <button onclick="openMenu()">open</button>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section> 
+            <h2>special things</h2>
+
+        </section>
+        <section>
+            <h2>services</h2>
+
+        </section>
+        <section>
+            <h2>about</h2>
+
+        </section>
+        <section>
+            <h2>contact</h2>
+
+        </section>
+        <section>
+            <h2>blog</h2>
+
+        </section>
+
+    </main>
+    <script>
+        function openMenu() {
+            document.getElementById("side-menu").style.display = "block"
+        }
+        function closeMenu() {
+            document.getElementById("side-menu").style.display = "none"
+        }
+     </script>
+    
+</body>
+</html>
